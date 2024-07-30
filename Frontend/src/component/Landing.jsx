@@ -2,7 +2,7 @@ import React from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Landing = () => {
-  const pdfURL = '/src/assets/Sasikumar.pdf';
+  const pdfURL = '/Sasikumar.pdf';
 
   const handleGmail = () => {
     window.open('https://mail.google.com/mail/?to=mr.inspiring5566@gmail.com#compose', '_blank');
