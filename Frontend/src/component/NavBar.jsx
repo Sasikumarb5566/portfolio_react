@@ -34,10 +34,10 @@ const NavBar = () => {
       {isOpenMenu && (
         <div className="absolute top-20 w-full bg-[#252829] text-[#9ca3af] flex flex-col items-center md:hidden text-center rounded-2xl">
           <ul className="flex flex-col gap-5 py-4">
-            <li className="hover:text-white cursor-pointer" onClick={closeMenu}>About</li>
-            <li className="hover:text-white cursor-pointer" onClick={closeMenu}>Skills</li>
-            <li className="hover:text-white cursor-pointer" onClick={closeMenu}>Projects</li>
-            <li className="hover:text-white cursor-pointer" onClick={closeMenu}>Contact</li>
+            <a href="#about"><li className='hover:text-white cursor-pointer ' onClick={closeMenu}>About</li></a>
+            <a href="#skills"><li className='hover:text-white cursor-pointer' onClick={closeMenu}>Skills</li></a>
+            <a href="#projects"><li className='hover:text-white cursor-pointer' onClick={closeMenu}>Projects</li></a>
+            <a href="#contact"><li className='hover:text-white cursor-pointer' onClick={closeMenu}>Contact</li></a>
           </ul>
         </div>
       )}
