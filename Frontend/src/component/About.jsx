@@ -14,7 +14,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-8" id="about" >
       <div className="bg-[#252829] md:w-9/12 rounded-3xl p-8 shadow-2xl ease-in-out delay-250 transition">
         <div className="">
           <h1 className="text-white font-semibold text-2xl md:text-start text-center">

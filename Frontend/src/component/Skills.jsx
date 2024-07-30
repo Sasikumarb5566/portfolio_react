@@ -3,7 +3,7 @@ import { faHtml5, faCss3, faJs, faReact, faGit, faGithub } from '@fortawesome/fr
 
 const Skills = () => {
   return (
-    <div className='flex flex-col items-center mb-8'>
+    <div className='flex flex-col items-center mb-8' id='skills'>
       <h1 className="text-2xl font-bold my-10">SKILLS</h1>
       <div className='relative flex flex-col sm:flex-row sm:justify-center w-9/12 gap-5'>
         <div className='relative border-2 border-slate-950 p-4 rounded-xl w-full sm:w-80 shadow-2xl transition-transform transform hover:scale-105 hover:z-50 hover:opacity-100 opacity-40 z-10'>

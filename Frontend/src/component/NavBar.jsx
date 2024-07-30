@@ -14,13 +14,13 @@ const NavBar = () => {
   return (
     <div className='relative h-20 flex justify-center'>
       <div className='bg-[#252829] flex absolute p-4 pl-10 pr-10 lg:w-3/4 justify-between rounded-full top-3 w-full md:w-auto fixed shadow-xl'>
-        <div className='text-xl text-[#f9fafb]'>Sasikumar</div>
+        <div className='text-xl text-[#f9fafb] font-semibold'>SASIKUMAR</div>
         <nav className='hidden md:flex'>
           <ul className='flex gap-8 text-[#9ca3af]'>
-            <li className='hover:text-white cursor-pointer'>About</li>
-            <li className='hover:text-white cursor-pointer'>Skills</li>
-            <li className='hover:text-white cursor-pointer'>Projects</li>
-            <li className='hover:text-white cursor-pointer'>Contact</li>
+            <a href="#about"><li className='hover:text-white cursor-pointer'>About</li></a>
+            <a href="#skills"><li className='hover:text-white cursor-pointer'>Skills</li></a>
+            <a href="#projects"><li className='hover:text-white cursor-pointer'>Projects</li></a>
+            <a href="#contact"><li className='hover:text-white cursor-pointer'>Contact</li></a>
           </ul>
         </nav>
         <div className='md:hidden flex items-center'>
