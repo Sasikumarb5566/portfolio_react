@@ -26,23 +26,23 @@ const Landing = () => {
         </div>
         <div className="flex gap-8 mt-8 justify-center md:justify-start">
           <a href={pdfURL} target="_blank">
-            <button className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white shadow-xl transition ease-in-out delay-150">
+            <button className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white shadow-xl transition ease-in-out delay-50">
               Download CV
             </button>
           </a>
-          <button className="bg-[#252829] text-white px-4 py-2 border-2 rounded-full border-slate-800 hover:bg-white hover:text-black hover:border-slate-800 shadow-xl transition ease-in-out delay-150">
+          <button className="bg-[#252829] text-white px-4 py-2 border-2 rounded-full border-slate-800 hover:bg-white hover:text-black hover:border-slate-800 shadow-xl transition ease-in-out delay-50">
             Contact Info
           </button>
         </div>
       </div>
       <div className="flex flex-row md:flex-col gap-8 mt-8">
-        <button onClick={handleGmail} className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white flex items-center shadow-xl cursor-pointer transition ease-in-out delay-150">
+        <button onClick={handleGmail} className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white flex items-center shadow-xl cursor-pointer transition ease-in-out delay-50">
           <FaEnvelope className="md:mr-2" /><span className="hidden md:inline">Gmail</span>
         </button>
-        <button onClick={handleGitHub}  className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white flex shadow-xl cursor-pointer transition ease-in-out delay-150">
+        <button onClick={handleGitHub}  className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white flex shadow-xl cursor-pointer transition ease-in-out delay-50">
           <FaGithub className="md:mr-2 mt-1" /><span className="hidden md:inline">GitHub</span>
         </button>
-        <button onClick={handleLinkedIn} className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white flex shadow-xl cursor-pointer transition ease-in-out delay-150">
+        <button onClick={handleLinkedIn} className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white flex shadow-xl cursor-pointer transition ease-in-out delay-50">
           <FaLinkedin className="md:mr-2 mt-1" /><span className="hidden md:inline">LinkedIn</span>
         </button>
       </div>
