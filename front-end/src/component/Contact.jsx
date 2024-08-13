@@ -7,11 +7,12 @@ const Contact = () => {
     name: "",
     email: "",
     phone: ""
-  })
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5174/form", {
+      const response = await fetch("/api/form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -21,14 +22,14 @@ const Contact = () => {
       const data = await response.json();
       if (data.success) {
         alert("Form submitted");
-        setFormData({...formData, email: "", name:"", phone:""});
+        setFormData({ ...formData, email: "", name: "", phone: "" });
       } else {
         console.log("Try again...");
       }
     } catch (error) {
       console.log("Error in submitting form", error);
     }
-  };  
+  };
 
   return (
     <div className="items-center flex flex-col px-4 sm:px-0 mb-8" id="contact">
@@ -46,7 +47,7 @@ const Contact = () => {
               placeholder="Sasikumar"
               name="name"
               value={formData.name}
-              onChange={(e) => setFormData({...formData, name: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
             />
             <label htmlFor="email">Email Address</label>
@@ -56,7 +57,7 @@ const Contact = () => {
               placeholder="abc@gmail.com"
               name="email"
               value={formData.email}
-              onChange={(e) => setFormData({...formData, email: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
             />
             <label htmlFor="phone">Phone No.</label>
@@ -66,7 +67,7 @@ const Contact = () => {
               placeholder="1234567890"
               name="phone"
               value={formData.phone}
-              onChange={(e) => setFormData({...formData, phone: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               required
             />
             <input
@@ -83,7 +84,7 @@ const Contact = () => {
               <span>Gmail</span>
             </button>
           </Link>
-          <Link to={'https://www.linkedin.com/in/sasikumarb5566'}>
+          <Link to={"https://www.linkedin.com/in/sasikumarb5566"}>
             <button className="border-2 px-4 py-2 border-slate-800 rounded-full hover:bg-[#252829] hover:text-white flex items-center justify-center shadow-xl cursor-pointer transition ease-in-out delay-50 gap-2">
               <FaLinkedin className="md:mr-2" />
               <span>LinkedIn</span>
