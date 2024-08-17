@@ -3,7 +3,7 @@
       { "source": "/api/(.*)", "destination": "/api/$1" }
     ],
     "builds": [
-      { "src": "api/form.js", "use": "@vercel/node" },
+      { "src": "front-end/api/form.js", "use": "@vercel/node" },
       { "src": "package.json", "use": "@vercel/static-build" }
     ]
   }
