@@ -14,6 +14,7 @@ const Skills = () => {
             <li className='flex items-center gap-3'><FontAwesomeIcon icon={faJs} /> JavaScript</li>
             <li className='flex items-center gap-3'><FontAwesomeIcon icon={faReact} /> React.js</li>
             <li className='flex items-center gap-3'><FontAwesomeIcon icon={faCss3} /> Tailwind CSS</li>
+            <li className='flex items-center gap-3'><FontAwesomeIcon icon={faCss3} /> TypeScript</li>
           </ul>
         </div>
         <div className='relative border-2 border-slate-950 p-4 rounded-xl w-full sm:w-80 shadow-2xl transition-transform transform hover:scale-105 hover:z-50 hover:opacity-100 opacity-40 z-20'>
