@@ -88,7 +88,7 @@ const School = () => {
                 <th className="text-white p-4 w-1/3 text-start">Address</th>
                 <td>
                   St. Paul Matriculation Higher Secondary School,
-                  <br /> Mangalampet, Cuddalore - 606 108.
+                  <br /> Mangalampet, Cuddalore - 606 104.
                 </td>
               </tr>
             </table>
@@ -137,7 +137,7 @@ const School = () => {
               <th className="text-white p-4 w-1/3 text-start">Address</th>
               <td>
                 St. Paul Matriculation Higher Secondary School,
-                <br /> Mangalampet, Cuddalore - 606 108.
+                <br /> Mangalampet, Cuddalore - 606 104.
               </td>
             </tr>
           </table>
